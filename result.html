@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examination Results Portal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="result..css">
+    
+</head>
+<body>
+    <!-- Updated Header -->
+    <header>
+        <div class="logo-container">
+            <div class="logo">GE</div>
+            <div class="logo-text">Gov<span>Exam</span></div>
+        </div>
+        
+        <button class="toggle-btn" id="toggleBtn">
+            <i class="fas fa-bars"></i>
+        </button>
+        
+        <div class="nav-container" id="navContainer">
+            <ul class="nav-links">
+                <li><a href="home.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="job.html"><i class="fas fa-briefcase"></i> Jobs</a></li>
+                <li><a href="admit.html"><i class="fas fa-id-card"></i> Admit Card</a></li>
+                <li><a href="result.html" class="active"><i class="fas fa-poll"></i> Result</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="container">
+      
+        <div class="controls">
+            <div class="search-box">
+                <i class="fas fa-search"></i>
+                <input type="text" id="searchInput" placeholder="Search exams, universities, or boards...">
+            </div>
+            <div class="filter-controls">
+                <button class="filter-btn active" data-filter="all">
+                    <i class="fas fa-layer-group"></i> All Results
+                </button>
+                <button class="filter-btn" data-filter="declared">
+                    <i class="fas fa-check-circle"></i> Declared
+                </button>
+                <button class="filter-btn" data-filter="pending">
+                    <i class="fas fa-hourglass-half"></i> Pending
+                </button>
+              
+            </div>
+        </div>
+
+        <h2 class="section-title">Latest Examination Results</h2>
+        
+        <div class="results-container" id="resultsContainer">
+           
+            
+            <!-- Regular result cards will be dynamically inserted here -->
+        </div>
+    </main>
+
+    <!-- Updated Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3>GovExam Portal</h3>
+                <p>Your trusted source for government exam updates, results, admit cards and job notifications across India.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><i class="fas fa-chevron-right"></i><a href="home.html">Home</a></li>
+                    <li><i class="fas fa-chevron-right"></i><a href="job.html">Latest Jobs</a></li>
+                    <li><i class="fas fa-chevron-right"></i><a href="admit.html">Admit Card</a></li>
+                    <li><i class="fas fa-chevron-right"></i><a href="result.html">Results</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h3>Important Exams</h3>
+                <ul>
+                    <li><i class="fas fa-chevron-right"></i><a href="#">UPSC Civil Services</a></li>
+                    <li><i class="fas fa-chevron-right"></i><a href="#">SSC CGL</a></li>
+                    <li><i class="fas fa-chevron-right"></i><a href="#">IBPS PO</a></li>
+                    <li><i class="fas fa-chevron-right"></i><a href="#">Railway Recruitment</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> Bihar, India</li>
+                    <li><i class="fas fa-phone"></i> +91 7979788075</li>
+                    <li><i class="fas fa-envelope"></i> info@govexamportal.com</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>Licence © <strong>Yash Gupta</strong>. All Rights Reserved.</p>
+            <p>Disclaimer: This is an educational demonstration website. Not affiliated with any government entity</p>
+        </div>
+    </footer>
+    <script src="result.js"></script>
+
+</body>
+</html>
